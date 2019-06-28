@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('{path}', function () {
-    return view('index');
-})->where('path', '(.*)');
+use Illuminate\Support\Facades\Route;
+
+Route::any('/wechat', 'WeChatController@serve');
+
+Route::get('{path}', 'IndexController@index')->where('path', '(.*)');
