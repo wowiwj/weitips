@@ -48,7 +48,7 @@ npm run production
 
 ## Email Verification
 
-To enable email verification make sure that your `App\User` model implements the `Illuminate\Contracts\Auth\MustVerifyEmail` contract.
+To enable email verification make sure that your `App\Models\User` model implements the `Illuminate\Contracts\Auth\MustVerifyEmail` contract.
 
 ## Changelog
 
